@@ -15,7 +15,7 @@ func main() {
 
 	mux.Handle("/", http.RedirectHandler(url, http.StatusSeeOther))
 
-	fmt.Printf("Listening on %s:%s", url, port)
+	fmt.Printf("Listening on port %s and redirecting to %s", port, url)
 
 	http.ListenAndServe(":"+port, mux)
 }

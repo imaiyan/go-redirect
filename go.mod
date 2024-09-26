@@ -1,3 +1,3 @@
-module github.com/imaiyan/go-redirect
+module go-redirect
 
 go 1.22.1
